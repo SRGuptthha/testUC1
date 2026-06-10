@@ -1,0 +1,41 @@
+# Intentionally OUTDATED / VULNERABLE pins for testing a remediation agent.
+# Do NOT use in production.
+
+# CVE-2023-32681 (proxy auth header leak)
+requests==2.25.0
+
+# Multiple CVEs incl. CVE-2024-3772 / CVE-2024-3651 territory; very old major
+urllib3==1.26.5
+
+# CVE-2020-28493 (ReDoS in jinja2 urlize)
+jinja2==2.11.2
+
+# CVE-2023-30861 (Werkzeug cookie parsing) / old Flask
+flask==1.1.2
+werkzeug==1.0.1
+
+# CVE-2022-40897 (setuptools ReDoS)
+setuptools==58.0.0
+
+# CVE-2023-37920 (Mozilla cert bundle removal)
+certifi==2021.5.30
+
+# CVE-2020-14343 (PyYAML arbitrary code execution via full_load)
+PyYAML==5.3.1
+
+# CVE-2023-43804 / cookie leak — old
+# (kept urllib3 above; here adding an old cryptography with CVEs)
+cryptography==3.3.2
+
+# CVE-2024-35195 territory baseline; old requests-toolbelt-style helper
+# Old pandas (no direct CVE but very stale, major-version behind)
+pandas==1.1.5
+
+# Old numpy, stale
+numpy==1.19.5
+
+# CVE-2022-21699 (IPython arbitrary code execution) — dev/test tool
+ipython==7.16.1
+
+# Old pytest for the test suite
+pytest==5.4.3
